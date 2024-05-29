@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #00796b;
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+}
+header {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+nav a {
+    color: #00796b;
+    text-decoration: none;
+    margin: 0 15px;
+    display: inline-block;
+}
+.content {
+    margin: 20px;
+}
+.blog-post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00796b;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.lang-btn {
+    margin-top: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.lang-btn img {
+    margin-right: 8px;
+}
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+.hidden {
+    display: none;
+}
+.chat-container {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: white;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+.chat-header {
+    background-color: #00796b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+.chat-footer {
+    display: flex;
+    border-top: 1px solid #00796b;
+}
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom-left-radius: 5px;
+}
+.chat-send-btn {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+}
+.chat-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

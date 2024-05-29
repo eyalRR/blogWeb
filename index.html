@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 data-i18n="pageTitle">Personal Blog</h1>
+        <button class="lang-btn" onclick="toggleLanguage()">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/globe.png" alt="Language Icon" width="20" height="20"/>
+            <span data-i18n="langBtnText">Switch to Hebrew</span>
+        </button>
+    </header>
+    <nav>
+        <a href="#llm-theory" data-i18n="navLlmTheory">LLM Theory</a>
+        <a href="#history" data-i18n="navHistory">History</a>
+        <a href="#how-to-build-chatgpt" data-i18n="navHowToBuildChatgpt">How to Build ChatGPT</a>
+    </nav>
+    <div class="content">
+        <div id="llm-theory" class="blog-post">
+            <h2 data-i18n="titleLlmTheory">LLM Theory</h2>
+            <p data-i18n="contentLlmTheory">
+                Large Language Models (LLMs) are a type of artificial intelligence model that are trained on vast amounts of text data. These models can generate human-like text and perform various language-related tasks. The theory behind LLMs involves complex neural network architectures, typically transformers, which enable the models to understand and generate language.
+            </p>
+        </div>
+        <div id="history" class="blog-post">
+            <h2 data-i18n="titleHistory">History</h2>
+            <p data-i18n="contentHistory">
+                The history of language models dates back to the early days of computer science, but significant advancements have been made in recent years. Starting from rule-based systems, the field evolved to statistical models and then to the deep learning approaches we see today. Notable milestones include the development of RNNs, LSTMs, and eventually transformers, which revolutionized the field with models like GPT-3 and beyond.
+            </p>
+        </div>
+        <div id="how-to-build-chatgpt" class="blog-post">
+            <h2 data-i18n="titleHowToBuildChatgpt">How to Build ChatGPT</h2>
+            <p data-i18n="contentHowToBuildChatgpt">
+                Building a model like ChatGPT involves several key steps:
+                <ul>
+                    <li>Data Collection: Gathering a large and diverse text dataset.</li>
+                    <li>Preprocessing: Cleaning and preparing the data for training.</li>
+                    <li>Model Architecture: Using a transformer-based architecture.</li>
+                    <li>Training: Using powerful GPUs/TPUs to train the model over weeks or months.</li>
+                    <li>Fine-tuning: Adjusting the model on specific tasks or datasets to improve performance.</li>
+                </ul>
+                OpenAI's GPT models are among the most advanced in this field, demonstrating the power of LLMs in understanding and generating natural language.
+            </p>
+        </div>
+    </div>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header" data-i18n="chatHeader">Chat with GPT</div>
+        <div class="chat-body" id="chat-body">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" class="chat-input" data-i18n-placeholder="chatPlaceholder" placeholder="Type a message..." onkeydown="if (event.key === 'Enter') sendMessage()" />
+            <button onclick="sendMessage()" class="chat-send-btn">Send</button>
+        </div>
+    </div>
+    <button class="chat-toggle-btn" onclick="toggleChat()">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/chat.png" alt="Chat Icon" width="30" height="30"/>
+    </button>
+    <footer>
+        &copy; 2024 Your Name. All rights reserved.
+    </footer>
+
+    <script src="https://unpkg.com/i18next@21.6.7/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://unpkg.com/jquery-i18next@1.2.2/dist/umd/jquery-i18next.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
